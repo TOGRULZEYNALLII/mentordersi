@@ -122,3 +122,36 @@
 
 
 // Verilmiş arrayin ikinci ən böyük elementini tap.
+
+
+// arraydaki strigin birinci herfini boyutmek ve birlesdirmek 
+
+// let arr = ["hello", "world", "javascript", "programming"];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+
+
+//     let firstLetter = arr[i].charAt(0).toUpperCase(); // Hərfini boyutmek
+//     let restOfString = arr[i].slice(1); // Qalan hissəsini alırıq
+//     let newString = firstLetter + restOfString; // Yeni stringi birləşdiririk
+//     newArr.push(newString); // Yeni stringi yeni arrayə əlavə edirik
+
+
+// }
+// console.log(newArr); 
+
+
+// let x:string[]=["yusif","ayan","musa"];
+// let newarr:string[]=[]
+// for(let i=0;i<x.length;i++){
+//     x[i]=x[i][0].toUpperCase()+x[i].slice(1)
+
+//     newarr.push(x[i])
+// }
+// console.log(newarr); // ["Yusif", "Ayan", "Musa"]
+
+// let arr = ["hello", "world", "javascript", "programming"];
+
+// arr[0]=arr[0].toUpperCase();
+
+// console.log(arr); 
