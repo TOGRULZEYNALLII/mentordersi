@@ -155,3 +155,109 @@
 // arr[0]=arr[0].toUpperCase();
 
 // console.log(arr); 
+
+
+
+
+// let x=prompt("Enter  a name"); // İstifadəçidən ədəd alırıq
+// let y=prompt("Enter a name"); // İstifadəçidən ədəd alırıq
+// let dogruluk=true;
+// if(x.length==y.length){
+//   for(let i=0;i<x.length;i++){
+//     let tapilmis=false;
+//     for(let j=0;j<y.length;j++){
+//       if( x[i]==y[j]){
+//         tapilmis=true;
+//         break;
+//     } else{
+//         tapilmis=false;
+//     } 
+//   }
+//    if (tapildi == false) {
+//       dogruluk = false;
+//       break;
+//     }
+//   }
+
+// }else{
+//     console.log("beraber deyil uzunluqlari sehvdir");
+// }
+
+// if(dogruluk){
+//   console.log("true");
+// }else{
+//   console.log("false");
+// }
+
+// let x = prompt("Enter a name");
+// let y = prompt("Enter a name");
+
+// let dogruluk = true;
+// // salam alams
+// if (x.length == y.length) {
+//   for (let i = 0; i < x.length; i++) {
+//     let tapildi = false;
+//     for (let j = 0; j < y.length; j++) {
+//       if (x[i] == y[j]) {
+//         tapildi = true;
+//         break;
+//       }
+//     }
+//     if (tapildi == false) {
+//       dogruluk = false;
+//       break;
+//     }
+//   }
+// } else {
+//   console.log("beraber deyil uzunluqlari sehvdir");
+//   dogruluk = false;
+// }
+
+// if (dogruluk) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+          //0   1      2
+// let arr = [1, [2, [3, 4, 5, 6, 7, 8, 9]]];
+
+// let newarr=[];
+
+// newarr.push(arr[0]); // 1
+// newarr.push(arr[1][0]);
+// newarr.push(arr[1][1]); // 2
+// console.log(newarr); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+// 2 array olsun 1 dovr, 1 sert ile arraylerdeki diff elementleri tapin
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7];
+let arr2 = [6, 7, 8, 9, 10, 20];
+
+let sonarr= [];  
+for (let i = 0; i < arr1.length; i++) {
+    let tapildi = false;
+    for (let j = 0; j < arr2.length; j++) {
+        if (arr1[i] == arr2[j]) {
+            tapildi = true;
+            break;
+        }
+    }
+    if (!tapildi) {
+        sonarr.push(arr1[i]);
+    }
+}
+let newarr2=[];
+for (let i = 0; i < arr2.length; i++) {
+    let tapildi = false;
+    for (let j = 0; j < arr1.length; j++) {
+        if (arr2[i] == arr1[j]) {
+            tapildi = true;
+            break;
+        }
+    }
+    if (!tapildi) {
+        sonarr.push(arr2[i]);
+    }
+}
+console.log(sonarr); // [1, 2, 3, 4, 5]
