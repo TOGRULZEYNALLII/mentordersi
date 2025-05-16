@@ -231,33 +231,157 @@
 
 // 2 array olsun 1 dovr, 1 sert ile arraylerdeki diff elementleri tapin
 
-let arr1 = [1, 2, 3, 4, 5, 6, 7];
-let arr2 = [6, 7, 8, 9, 10, 20];
+// let arr1 = [1, 2, 3, 4, 5, 6, 7];
+// let arr2 = [6, 7, 8, 9, 10, 20];
 
-let sonarr= [];  
-for (let i = 0; i < arr1.length; i++) {
-    let tapildi = false;
-    for (let j = 0; j < arr2.length; j++) {
-        if (arr1[i] == arr2[j]) {
-            tapildi = true;
-            break;
-        }
-    }
-    if (!tapildi) {
-        sonarr.push(arr1[i]);
-    }
-}
-let newarr2=[];
-for (let i = 0; i < arr2.length; i++) {
-    let tapildi = false;
-    for (let j = 0; j < arr1.length; j++) {
-        if (arr2[i] == arr1[j]) {
-            tapildi = true;
-            break;
-        }
-    }
-    if (!tapildi) {
-        sonarr.push(arr2[i]);
-    }
-}
-console.log(sonarr); // [1, 2, 3, 4, 5]
+// let sonarr= [];  
+// for (let i = 0; i < arr1.length; i++) {
+//     let tapildi = false;
+//     for (let j = 0; j < arr2.length; j++) {
+//         if (arr1[i] == arr2[j]) {
+//             tapildi = true;
+//             break;
+//         }
+//     }
+//     if (!tapildi) {
+//         sonarr.push(arr1[i]);
+//     }
+// }
+// let newarr2=[];
+// for (let i = 0; i < arr2.length; i++) {
+//     let tapildi = false;
+//     for (let j = 0; j < arr1.length; j++) {
+//         if (arr2[i] == arr1[j]) {
+//             tapildi = true;
+//             break;
+//         }
+//     }
+//     if (!tapildi) {
+//         sonarr.push(arr2[i]);
+//     }
+// }
+// console.log(sonarr); // [1, 2, 3, 4, 5]
+
+
+
+
+// ,some , every, reduce, find slice, splice, join,
+
+// let arr 0 ,1 ,2 ,3 ,4
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let newarr = arr.map((item) => {
+//     return item * 2;
+// });
+// console.log(newarr); // [2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+// concat 
+//  let arr1 = [1, 2, 3];
+//   let arr2 = [4, 5, 6];
+//   let arr3 = arr1.concat(arr2);
+//   console.log(arr3); // [1, 2, 3, 4, 5, 6]
+
+  // pop 
+  // let arr = [1, 2, 3, 4, 5];
+  // let lastElement = arr.pop();
+  // console.log(lastElement); // 5
+  // console.log(arr); // [1, 2, 3, 4]
+  // // shift
+  // let arr = [1, 2, 3, 4, 5];  
+  // let firstElement = arr.shift();
+  // console.log(firstElement); // 1
+  // console.log(arr); // [2, 3, 4, 5]
+
+  // // unshift
+  // let arr = [1, 2, 3, 4, 5];
+  // arr.unshift(20);
+  // console.log(arr); // [20, 1, 2, 3, 4, 5]
+  // // indexOf
+  // let arr = [1, 2, 3, 4, 5];
+  // let index = arr.indexOf(3);
+  // console.log(index); // 2
+  // // lastIndexOf    2        5
+  // let arr = [1, 2, 3, 4, 5, 3,5,6,3,4,5];
+  // let lastIndex = arr.lastIndexOf(3);
+  // console.log(lastIndex); // 8
+  // includes
+// let arr1 = [1, 2, 3, 6];
+// let arr2 = [2, 4, 6, 8];
+
+// // arr1-dəki hansı elementlər arr2-də var?
+// let common = arr1.filter(item => arr2.includes(item));
+
+// console.log(common); // [2, 6]
+
+
+
+// ,some , every, reduce, find slice, splice, join,
+
+// some 
+//  let arr = [1, 2, 3, 4, 5];
+// let hasEven = arr.some(item => item % 2 === 0);
+// console.log(hasEven); // true
+
+// every
+//  let arr = [1, 2, 3, 4, 5];
+// let allEven = arr.every(item => item % 2 === 0);
+// console.log(allEven); // false
+// // reduce   0  1  2  3  4
+//  let arr = [1, 2, 3, 4, 5];
+//  let basket=0;
+//  for(let i=0;i<arr.length;i++){
+//     arr[i]=arr[i]*2;
+//  }
+// let sum = arr.reduce((i, heminindeksdekideyer => i + heminindeksdekideyer, 0);
+// console.log(sum); // 15
+
+// const nesebirfunkisya(){
+  
+
+// }
+
+
+// let nesebirfunkisya = () => {
+
+// }
+// let x=5;
+// const function arrowlar (y){
+//   x
+
+// }
+
+//  const arrowlar = (arr1, arr2) => {arr1 + arr2}
+
+// find slice, splice, join,
+// find 
+//  let arr = [1, 2, 3, 4, 5];
+//   let found = arr.find(item => item = 3);
+//   console.log(found); // 4
+
+// // slice
+//  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   let sliced = arr.slice(1, 6);
+//   console.log(sliced); // 
+
+
+
+
+
+// splice     0  1           
+  // let arr = [1, 2, , 7, 8, 9, 10];
+  // arr.splice(1,4);
+  // console.log(arr); // [1, 6, 7, 8, 9, 10]
+
+  // join
+//    let arr = [1 , 2, 3, 4, 5];
+//     let joined = arr.join("salam");
+//     // Nəticə:
+//                 // "1salam2salam3salam4salam5" 
+
+// let str = "salamsalamslams";
+// let newarr = str.split("s");
+// console.log(newarr); // ["", "alam", "alam", "lam"]
+// let eded="1,2,3,4,5,6,7,8,9";
+// let newarr2 = eded.split(",");
+// console.log(newarr2); // ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
