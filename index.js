@@ -385,3 +385,188 @@
 // let eded="1,2,3,4,5,6,7,8,9";
 // let newarr2 = eded.split(",");
 // console.log(newarr2); // ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+// join ,splice , slice, find, reduce, every, some, map, filter, forEach, flat, flatMap, fill, copyWithin, indexOf, lastIndexOf, includes, concat, push, pop, shift, unshift
+
+// yeni mentor  dersi  bazar gunu 18 may 
+//43. Array icerisinde en kicik ededi tapin
+// let arr=[1,0,3,4,5,0,-2];
+// let min=arr[0]; //==1
+
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]<min){
+//     min=arr[i];
+//   }
+// }
+// console.log(min)
+
+// 44. Array icersisinde sonu 9 olan nece elemet var
+// let arr=[123,45679,456,899,678,569];
+// let count =0;
+// for(let i=0;i<arr.length;i++){
+//   let reminder= arr[i]%10
+//   if(reminder==9){
+//     count++
+//   }
+// }
+// console.log(count);
+
+
+// 45. Array icerisinde nece cut element var
+// let arr=[1,2,3,4,5,6,7,8,9,200];
+// let say=0;
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]%2==0){
+//   say++;
+//   }
+
+// }
+// console.log(say)
+
+
+// 46. Array icerisinde nece tek element var
+
+// let arr=[1,2,3,4,5,6,7,8,9,200,7];
+// let say=0;
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]%2==0){
+//     continue;
+//   }else{
+//     say++;
+//   }
+
+// }
+// console.log(say)
+
+// 47. Arrayin elementlerinin hamisin cut olub olmadigina baxin
+//  let arr=[1,2,3,4,5,6,7,8,10,200]; 
+//  let arr2=[2,4,6,8,10,12,14];
+//  let cutluk=true;
+//  arr2.map((element)=>{
+//   if(element%2==0){
+//   }else{
+//     cutluk=false;
+//   }
+//  }
+// )
+ 
+  // for(let i=0;i<arr2.length;i++){
+  //   if(arr2[i]%2==0){
+  //     continue;
+  //   }else{
+  //     cutluk=false;
+  //   }
+  // }
+  // if(cutluk==true){
+  //   console.log("array elemntleri cutdur");
+  // }else{
+  //   console.log("arrayin elementleriin hamisi cut deyil");
+  // }
+
+
+  // 48. Array icerisindeki tek ededlerin cemini tapin
+//   let arr=[1,2,3,4,5,6,7,8];
+// let basket=0;
+//   arr.map((element)=>{
+//     if(element%2!=0){
+//       basket=basket+element;
+//     }
+//   })
+// console.log(basket)
+
+// 49. Array icerisindeki tam ededlerin cemini tapin
+
+// let arr= [10,22,23.5,45.6,450];
+// let basket=0;
+// arr.map((element)=>{
+//   element=element*10
+//   if(element%10==0){
+//     element=element/10;
+//     basket=basket+element;
+//   }
+// })
+
+// console.log(basket);
+
+// 50. Array icerisinde nece element oldugunu tapin
+// let arr=[1,2,3,4,5,6];
+// count=0;
+// for(let i=0;i<100;i++){
+//   if(arr[i]){
+//     count++
+//   }
+// }
+// console.log(count)
+// 51. Istifadeci 0 daxil edenedek edelerin cemini tapin
+// let x = 2;
+// let basket=0;
+// while (x != 0) {
+//   x = +prompt("ededi daxil et");
+//   basket=basket+x;
+// }
+// console.log(basket)
+
+
+// 53. Arraydaki ededlerin ededi ortasini tapin
+// let arr=[2,4,4,6];
+// let basket=0;
+// arr.map((element)=>{
+// basket =basket+element;
+
+// })
+// let edediOrta=basket/arr.length;
+// console.log(edediOrta)
+
+
+// 72. Qarışıq array verilib, yalnızca stringləri çap etdirin
+// let arr=[1,2,4,"dsfsdf","g",6,7,true];
+// arr.map((element)=>{
+//   if(typeof(element)==="string"){
+//     console.log(element)
+//   }
+    
+// })
+
+// 73. Arrayda metodlar ile ededleri 5 vahid artirmaq
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.map((element)=>{
+//   element=element+5;
+// console.log(element)
+// })
+ 
+ 
+// console.log(transposeMatrix([[1,2,3], [4,5,6], [7,8,9]])); // [[1,4,7], [2,5,8], [3,6,9]]
+//  let arr=[1,2,3];
+//  let arr2=[4,5,6];
+//  let arr3=[7,8,9];
+//  let newarr1=[];
+//  let newarr2=[];
+//  let newarr3=[];
+//   newarr1.push(arr[0]);
+//   newarr1.push(arr2[0]);
+//   newarr1.push(arr3[0]);
+
+//    newarr2.push(arr[1]);
+//   newarr2.push(arr2[1]);
+//   newarr2.push(arr3[1]);
+
+//     newarr3.push(arr[2]);
+//   newarr3.push(arr2[2]);
+//   newarr3.push(arr3[2]);
+
+//    console.log(newarr1,newarr2,newarr3)
+
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+let sifirnci1=[array1[0]];
+let birlesmisArray = sifirnci1.concat(array2[0]);
+console.log(birlesmisArray); // [1, 4]
+ sifirnci1=[array1[1]];
+let birlesmisArray2 = sifirnci1.concat(array2[1]);
+console.log(birlesmisArray2)
+
+sifirnci1=[array1[2]]
+
+let birlesmisarray3=sifirnci1.concat(array2[2]);
+console.log(birlesmisarray3)
