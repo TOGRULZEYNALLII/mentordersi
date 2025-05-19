@@ -557,16 +557,36 @@
 
 //    console.log(newarr1,newarr2,newarr3)
 
-let array1 = [1, 2, 3];
-let array2 = [4, 5, 6];
-let sifirnci1=[array1[0]];
-let birlesmisArray = sifirnci1.concat(array2[0]);
-console.log(birlesmisArray); // [1, 4]
- sifirnci1=[array1[1]];
-let birlesmisArray2 = sifirnci1.concat(array2[1]);
-console.log(birlesmisArray2)
+// let array1 = [1, 2, 3];
+// let array2 = [4, 5, 6];
+// let sifirnci1=[array1[0]];
+// let birlesmisArray = sifirnci1.concat(array2[0]);
+// console.log(birlesmisArray); // [1, 4]
+//  sifirnci1=[array1[1]];
+// let birlesmisArray2 = sifirnci1.concat(array2[1]);
+// console.log(birlesmisArray2)
 
-sifirnci1=[array1[2]]
+// sifirnci1=[array1[2]]
 
-let birlesmisarray3=sifirnci1.concat(array2[2]);
-console.log(birlesmisarray3)
+// let birlesmisarray3=sifirnci1.concat(array2[2]);
+// console.log(birlesmisarray3)
+
+          //0     1          2
+        //0 1 2   0 1 2   0 1 2
+let arr=[[1,2,3],[4,5,6],[7,8,9]];
+let birinicihedliarr=[];
+let ikincihedliarr=[];
+let ucuncuhedliarr=[];
+
+for(let i=0;i<arr.length;i++){
+  birinicihedliarr.push(arr[i][0])
+}
+
+for(let i=0;i<arr.length;i++){
+  ikincihedliarr.push(arr[i][1])
+}
+
+for(let i=0;i<arr.length;i++){
+  ucuncuhedliarr.push(arr[i][2])
+}
+console.log(birinicihedliarr,ikincihedliarr,ucuncuhedliarr)
