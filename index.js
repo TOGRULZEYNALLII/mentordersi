@@ -573,20 +573,32 @@
 
           //0     1          2
         //0 1 2   0 1 2   0 1 2
-let arr=[[1,2,3],[4,5,6],[7,8,9]];
-let birinicihedliarr=[];
-let ikincihedliarr=[];
-let ucuncuhedliarr=[];
+        // cetin sual 
+// let arr=[[1,2,3],[4,5,6],[7,8,9]];
+// let birinicihedliarr=[];
+// let ikincihedliarr=[];
+// let ucuncuhedliarr=[];
 
-for(let i=0;i<arr.length;i++){
-  birinicihedliarr.push(arr[i][0])
-}
+// for(let i=0;i<arr.length;i++){
+//   birinicihedliarr.push(arr[i][0])
+// }
 
-for(let i=0;i<arr.length;i++){
-  ikincihedliarr.push(arr[i][1])
-}
+// for(let i=0;i<arr.length;i++){
+//   ikincihedliarr.push(arr[i][1])
+// }
 
+// for(let i=0;i<arr.length;i++){
+//   ucuncuhedliarr.push(arr[i][2])
+// }
+// console.log(birinicihedliarr,ikincihedliarr,ucuncuhedliarr)
+
+let arr=[6,7,102,104,105,106,107];
+
+let basket=0;
 for(let i=0;i<arr.length;i++){
-  ucuncuhedliarr.push(arr[i][2])
+  if(arr[i]>100){
+    if(arr[i]%3==0){
+      basket=basket+arr[i];
+    }
+  }
 }
-console.log(birinicihedliarr,ikincihedliarr,ucuncuhedliarr)
