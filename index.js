@@ -592,13 +592,51 @@
 // }
 // console.log(birinicihedliarr,ikincihedliarr,ucuncuhedliarr)
 
-let arr=[6,7,102,104,105,106,107];
+// let arr=[6,7,102,104,105,106,107];
 
-let basket=0;
-for(let i=0;i<arr.length;i++){
-  if(arr[i]>100){
-    if(arr[i]%3==0){
-      basket=basket+arr[i];
+// let basket=0;
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]>100){
+//     if(arr[i]%3==0){
+//       basket=basket+arr[i];
+//     }
+//   }
+// }
+// console.log(basket)
+
+// let arr = [6, 7, 102, 104, 105, 106, 107];
+ 
+// let basket = arr
+//   .filter(x => x > 100 && x % 3 === 0)
+//   .reduce((sum, x) => sum + x, 0);
+
+// console.log(basket); // 207
+
+
+const data={
+  student:[
+    {
+      name:"Togrul",
+      surname:"Zeynalli",  
+      email:"zzzzttttt63@gmail.com",
+    },
+    {
+      name:"Ayan",
+      surname:"Zeynallova",
+      email:"sss@gmail.com"
+
     }
-  }
+  ],
+  teacher:[],
 }
+data.student[0].nickname="Togrul";
+data.teacher[0];
+console.log(data.student[0])
+
+const Togrul={
+  name:"Togrul",
+  surname:"Zeynalli",
+  email:"zzzzttttt63@gmail.com",
+  age:23
+}
+delete Togrul.age;
