@@ -613,30 +613,81 @@
 // console.log(basket); // 207
 
 
-const data={
-  student:[
-    {
-      name:"Togrul",
-      surname:"Zeynalli",  
-      email:"zzzzttttt63@gmail.com",
-    },
-    {
-      name:"Ayan",
-      surname:"Zeynallova",
-      email:"sss@gmail.com"
+// const data={
+//   student:[
+//     {
+//       name:"Togrul",
+//       surname:"Zeynalli",  
+//       email:"zzzzttttt63@gmail.com",
+//     },
+//     {
+//       name:"Ayan",
+//       surname:"Zeynallova",
+//       email:"sss@gmail.com"
 
-    }
-  ],
-  teacher:[],
-}
-data.student[0].nickname="Togrul";
-data.teacher[0];
-console.log(data.student[0])
+//     }
+//   ],
+//   teacher:[],
+// }
+// data.student[0].nickname="Togrul";
+// data.teacher[0];
+// console.log(data.student[0])
 
-const Togrul={
-  name:"Togrul",
-  surname:"Zeynalli",
-  email:"zzzzttttt63@gmail.com",
-  age:23
-}
-delete Togrul.age;
+// const Togrul={
+//   name:"Togrul",
+//   surname:"Zeynalli",
+//   email:"zzzzttttt63@gmail.com",
+//   age:23
+// }
+// delete Togrul.age;
+
+
+ // mentor dersi 21 may ///////////////////////////////////////////////////////////////////////////////////////////////
+// array copy etmek 
+//  let arr=[10,2,3,4,5,6,1]; 
+//  let arr2=[];
+
+//  for(let i=0;i<arr.length;i++){
+//   arr2.push(arr[i]);
+//  }
+//  ////// 
+//  console.log(arr2); // [10, 2, 3, 4, 5, 6, 1]
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum = arr.reduce((a, b) => (a + b), 0);
+// console.log(sum);
+// let arr = [1, 2, 327322222, 4, 5, 6, 7, 8, 9];
+// arr.forEach((element)=>{
+//   console.log(element);
+// })
+
+
+    // Verilmiş array-də neçə dəfə 5 rəqəmi təkrarlanıb?
+
+
+// let arr = [10, 1, 2, 33,5,5,5,5,5, 44 , 5 , 5];
+// const forEach = arr.forEach(s => {
+//     if(s == 5){
+//         console.log(s)
+//     }
+// })
+// Verilmiş array-də bütün elementləri vergül ilə birləşdirib bir string yarat (join).
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let str = arr.join(",");
+// console.log(str);  // "1,2,3,4,5,6,7,8,9"  
+
+    // Verilmiş array-də təkrarlanan elementləri tap (yalnız unikal olanları göstər).
+  //  let arr = [1, 2, 3, 4,4,4,4, 5, 6, 7, 8, 9, ];
+
+  //  for (let i = 0; i < arr.length; i++) {
+  //   let count = 0;
+  //      for (let j = 0; j < arr.length; j++) {
+  //          if (arr[i] === arr[j]) {
+  //              count++;
+  //          }
+  //      }
+  //      if (count === 1) {
+  //          console.log(arr[i]);
+  //      }
+  //  }
