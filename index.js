@@ -691,3 +691,45 @@
   //          console.log(arr[i]);
   //      }
   //  }
+
+      // Verilmiş string-lərdən ibarət array-i əlifba sırası ilə düz (sort).
+      // let strArr = ["b", "a", "c"];
+      // strArr.sort();
+      // console.log(strArr); 
+
+          // Verilmiş array-də elementlərdən biri 0-dırsa, "var" əks halda "yoxdur" de.
+          // Verilmiş array-də splice ilə 2-ci elementdən başlayaraq 3 elementi sil.
+          // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+          // arr.splice(1, 3);
+          // console.log(arr); // [1, 5, 6, 7, 8, 9] 
+          // Verilmiş array-də 2-ci elementdən başlayaraq 3 elementi silin və onları yeni array-ə əlavə edin.
+
+        // Verilmiş array-də elementlərdən biri 0-dırsa, "var" əks halda "yoxdur" de.
+
+
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // if(arr.includes(0)){
+        //     console.log("var")
+        // }else{
+        //     console.log("yoxdur")
+        // }
+
+            // Verilmiş array-dəki ən böyük 3 ədədi tap.
+
+            // Verilmiş array-dəki ən böyük 3 ədədi tap.
+            // let arr = [1, 23,2, 3, 4, 5, 6, 7, 8, 9];        
+            // arr.sort((a, b) => a - b);
+            // //  1,2,3,4,5,6,7,8,9,23
+            // console.log(arr[arr.length-1]); // 23
+            // console.log(arr[arr.length-2]); // 9
+            // console.log(arr[arr.length-3]); // 8
+
+                // Verilmiş array-də ədədlərin hansı biri 3-ə bölünür və həm də 5-ə bölünmür?
+                // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+                // for(let i=0;i<arr.length;i++){
+                //     if(arr[i]%3==0 && arr[i]%5!=0){
+                //         console.log(arr[i])
+                //     }
+                // }
