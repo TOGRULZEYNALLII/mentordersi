@@ -732,4 +732,103 @@
                 //     if(arr[i]%3==0 && arr[i]%5!=0){
                 //         console.log(arr[i])
                 //     }
-                // }
+// }
+
+
+// funksiyalar
+
+// function topla(a, b) {
+//     return a + b;
+// }
+
+// function cix(a, b) {
+//     return a - b;
+// }
+
+// function vur(a, b) {
+//     return a * b;
+// }
+
+// function bol(a, b) {
+//     if (b === 0) {
+//         return "0-a bolmek olmaz";
+//     }
+//     return a / b;
+// }
+
+// topla(5, 10); // 15
+// cix(10, 5); // 5
+// vur(5, 10); // 50
+// bol(10, 2); // 5
+
+
+// tek yoxsa cut
+// function tekYoxsaCut(eded) {
+//     if (eded % 2 === 0) {
+//         return "cut";
+//     } else {
+//         return "tek";
+//     }
+// }
+// tekYoxsaCut(5); // "tek"
+// tekYoxsaCut(10); // "cut"
+
+// Array içindəki ədədlərin cəmini hesablayan funksiya yaz.
+
+// function cem(arr) {
+//     let toplam = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         toplam += arr[i];
+//     }
+//     return toplam;
+// }
+// cem([1, 2, 3, 4, 5]); // 15
+
+
+// Verilən bir sözün tərsini (məsələn: "salam" → "malas") qaytaran funksiya yaz.
+// function tersSöz(söz) {
+//     let ters = "";
+//     for (let i = söz.length - 1; i >= 0; i--) {
+//         ters += söz[i];
+//     }
+//     return ters;
+// }
+// // tersSöz("salam"); // "malas"
+ 
+// Bir cümlədə neçə söz olduğunu hesablayan funksiya yaz. 
+
+// function cumledeSozSay(cumle) {
+//    let sozler=cumle.split(" ");
+//    return sozler.length;
+// }
+//   console.log(cumledeSozSay("salam bu uzun bir cumledir"));
+
+//   function cumledeSozSay(cumle) {  
+//     let cumlesozsayi=0;
+//     let count = 0;
+//     for (let i = 0; i < cumle.length; i++) {
+//         if (cumle[i] == " ") {
+//           count++;
+//         }
+//     }
+//     return count + 1; // Söz sayını tapmaq üçün boşluqların sayına 1 əlavə edirik
+//   }
+// console.log(cumledeSozSay("salam bu uzun bir cumledir ss"
+
+
+
+// // tarix hansi byukdur 
+// function tarixHansiByukdur(tarix1, tarix2) {
+//   if (tarix1 > tarix2) {
+//     return "tarix1 daha büyüktür";
+//   } else if (tarix1 < tarix2) {
+//     return "tarix2 daha büyüktür";
+//   } else {
+//     return "her iki tarix eynidir";
+//   }
+// }
+// let input1 = prompt("tarix1 daxil edin (YYYY-MM-DD formatında):");
+// let input2 = prompt("tarix2 daxil edin (YYYY-MM-DD formatında):");
+// tarix1 = new Date(input1);
+// tarix2 = new Date(input2);
+// console.log(tarixHansiByukdur(tarix1, tarix2)); // "tarix2 daha büyüktür"   
