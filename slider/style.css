@@ -7,9 +7,16 @@ img{
 .container{
     display: flex;
     width: 200px;
+    position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: flex-start;
+}
+div img {
+  min-width: 100%;    /* container kadar yer kaplasın */
+  height: 150px;
+  border-radius: 8px;
+  flex-shrink: 0;     /* boşluk oluşmasını engeller */
 }
 body{
     display: flex;
