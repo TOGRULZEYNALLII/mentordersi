@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kub Hareket</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #cube {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 100px;
+      transition: 1s ease;
+      left: 100px;
+    }
+    #apple{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        position: absolute;
+        top: 200px;
+        left: 200px;    
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="cube"></div>
+    <div id="apple"></div>
+  <script>
+    const cube = document.getElementById("cube");
+    const apple = document.getElementById("apple");
+    let posX = 100;
+    let posY = 100;
+    const speed = 10;
+    const applewidth = 70;
+    const appleheight = 70;
+    document.addEventListener("keydown", (e) => {
+      switch (e.key.toLowerCase()) {
+        case "w":
+          posY -= speed;
+          break;
+        case "s":
+          posY += speed;
+          break;
+        case "a":
+          posX -= speed;
+          break;
+        case "d":
+          posX += speed;
+          break;
+      }
+      cube.style.top = posY + "px";
+      cube.style.left = posX + "px";
+        checkCollision();
+    });
+
+    function checkCollision() {
+      const cubeRect = cube.getBoundingClientRect();
+      const appleRect = apple.getBoundingClientRect();
+
+      if (
+        cubeRect.x < appleRect.x + appleRect.width &&
+        cubeRect.x + cubeRect.width > appleRect.x &&
+        cubeRect.y < appleRect.y + appleRect.height &&
+        cubeRect.y + cubeRect.height > appleRect.y
+      ) {
+        apple.style.display = "none";
+        cube.style.width = applewidth + "px";
+        cube.style.height = appleheight + "px";
+      }
+    }
+  </script>
+</body>
+</html>
