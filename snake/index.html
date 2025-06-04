@@ -9,11 +9,12 @@
       overflow: hidden;
     }
     #cube {
-      width: 50px;
-      height: 50px;
+      width: 10%;
+      height: 10%;
       background-color: red;
       position: absolute;
       top: 100px;
+      border-radius: 100%;
       transition: 1s ease;
       left: 100px;
     }
@@ -70,8 +71,8 @@
         cubeRect.y + cubeRect.height > appleRect.y
       ) {
         apple.style.display = "none";
-        cube.style.width = applewidth + "px";
-        cube.style.height = appleheight + "px";
+        cube.style.width = applewidth + "%";
+        cube.style.height = appleheight + "%";
       }
     }
   </script>
