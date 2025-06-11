@@ -4,38 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hesap Makinesi</title>
-  <link rel="stylesheet" href="/mentordersi/hesapmakinesi/style.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+    .calculator {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    #display {
+      width: 240px;
+      height: 50px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      gap: 10px;
+    }
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #e0e0e0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #ccc;
+    }
+    .zero {
+      grid-column: span 2;
+    }
+  </style>
 </head>
 <body>
   <div class="calculator">
-    <input type="text" id="display" disabled />
+    <div id="display">0</div>
 
     <div class="buttons">
-      <button >C</button>
-      <button >÷</button>
-      <button>×</button>
-      <button >⌫</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="appendOperator('*')">×</button>
+      <button onclick="backspace()">⌫</button>
 
-      <button >7</button>
-      <button >8</button>
-      <button >9</button>
-      <button >−</button>
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('-')">−</button>
 
-      <button >4</button>
-      <button >5</button>
-      <button >6</button>
-      <button >+</button>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
 
-      <button >1</button>
-      <button >2</button>
-      <button >3</button>
-      <button >=</button>
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="calculate()">=</button>
 
-      <button >0</button>
-      <button >.</button>
+      <button onclick="appendNumber('0')" class="zero">0</button>
+      <button onclick="appendNumber('.')">.</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    let display = document.getElementById('display');
+    let firstValue = '';
+    let secondValue = '';
+    let operator = '';
+    let resultShown = false;
+
+    function appendNumber(num) {
+      if (resultShown) {
+        clearDisplay();
+        resultShown = false;
+      }
+
+      if (operator === '') {
+        firstValue += num;
+        display.textContent = firstValue;
+      } else {
+        secondValue += num;
+        display.textContent = secondValue;
+      }
+    }
+
+    function appendOperator(op) {
+      if (firstValue === '') return;
+      operator = op;
+    }
+
+    function calculate() {
+      if (firstValue === '' || secondValue === '' || operator === '') return;
+
+      let result = 0;
+      const a = parseFloat(firstValue);
+      const b = parseFloat(secondValue);
+
+      switch (operator) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '*': result = a * b; break;
+        case '/': result = b !== 0 ? a / b : 'HATA'; break;
+      }
+
+      display.textContent = result;
+      firstValue = result.toString();
+      secondValue = '';
+      operator = '';
+      resultShown = true;
+    }
+
+    function clearDisplay() {
+      firstValue = '';
+      secondValue = '';
+      operator = '';
+      display.textContent = '0';
+    }
+
+    function backspace() {
+      if (operator === '') {
+        firstValue = firstValue.slice(0, -1);
+        display.textContent = firstValue || '0';
+      } else {
+        secondValue = secondValue.slice(0, -1);
+        display.textContent = secondValue || '0';
+      }
+    }
+  </script>
 </body>
 </html>
