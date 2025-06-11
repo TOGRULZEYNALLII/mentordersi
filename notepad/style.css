@@ -4,12 +4,20 @@
   --box: #f4f4f4;
 }
 
-body.dark {
+.dark {
   --bg: #1e1e1e;
   --text: #ffffff;
   --box: #2e2e2e;
 }
-
+.status{
+  display: none;
+}
+.status-active {
+  display: block;
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
 body {
   background-color: var(--bg);
   color: var(--text);
