@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Togrul", "age": 25 },
+    { "id": 2, "name": "Ali", "age": 30 }
+  ],
+  "posts": [
+    { "id": 1, "title": "Hello World", "content": "Test yazısı" }
+  ]
+}
