@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": "b1a6",
+      "bookname": "HTML Essentials",
+      "author": "Charlie White",
+      "count": 5,
+      "price": 9.99,
+      "title": "HTML Basics"
+    },
+    {
+      "id": "b1a7",
+      "bookname": "togrul",
+      "author": "zeynalli",
+      "count": "30",
+      "price": "20",
+      "title": "hesabat computer elmleri"
+    },
+    {
+      "id": "b1a8",
+      "bookname": "fariz",
+      "author": "fariz agamaliyev",
+      "count": "33",
+      "price": "23",
+      "title": "adin ne "
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <label>Book Name <input type="text" id="bookName" placeholder="Enter your book name" /></label>
+      <label>Author <input type="text" id="author" placeholder="Enter your book author" /></label>
+      <label>Page Count <input type="number" id="count" placeholder="Enter page count" /></label>
+      <label>Price <input type="number" id="price" placeholder="Enter price" /></label>
+      <label>Title <input type="text" id="title" placeholder="Enter title" /></label>
+      <button onclick="addBook()">Order</button>
+      <link rel="stylesheet" href="/mentordersi/tabledomson/style.css">
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Count</th>
+            <th>Price</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody id="bookTableBody">
+          <!-- Dinamik satırlar burada yaranacaq -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/mentordersi/tabledomson/script.js"></script>
+</body>
+</html>
