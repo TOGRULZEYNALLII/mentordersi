@@ -1,0 +1,52 @@
+.section-images{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 20px;
+}
+.img1{
+    height: 400px;
+}
+
+.img2{
+    height: 400px;
+}
+
+.img3{
+    height: 400px;
+}
+.step{
+    display: flex;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.shop-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-shopnow{
+     width: 150px;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 20px;
+}
