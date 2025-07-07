@@ -1,0 +1,36 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Messi",
+        "surname": "Lionel",
+        "salary": 75000,
+        "location": "Los Angeles",
+        "age": 36
+    },
+    {
+      "id": 2,
+      "name": "Ronaldo",
+        "surname": "Cristiano",
+        "salary": 80000,
+        "location": "Madrid",
+        "age": 38
+    },
+    {
+      "id": 3,
+      "name": "Neymar",
+        "surname": "Junior",
+        "salary": 70000,
+        "location": "Paris",
+        "age": 31
+    },
+    {
+      "id": 4,
+      "name": "Mbappe",
+        "surname": "Kylian",
+        "salary": 60000,
+        "location": "Paris",
+        "age": 24
+    }
+  ]
+}
