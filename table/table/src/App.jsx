@@ -15,7 +15,7 @@ function HomePage () {
       .catch(error => console.error('Error fetching data:', error));
 
   },[]);
-
+  const navigate = useNavigate();
   const handleDelete = (id) => {
     fetch(`http://localhost:3000/people/${id}`, {
       method: 'DELETE',
